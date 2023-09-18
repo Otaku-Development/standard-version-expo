@@ -17,6 +17,10 @@
   <pre>npm i -D standard-version@next @mccraveiro/standard-version-expo</pre>
 </div>
 
+## Why are we using a fork?
+
+The original version was abandonned long ago. This is one of the downsides of the React Native community - people create packages which become popular but there's not enough support to maintain them, perhaps people are too thinly spread? In this case the package uses `@expo/config-plugins@1.0.33` (the expected version for Expo SDK 48 is `6.0.0`!) which is no longer compatible with the other dependencies. There's further info in [this thread in the original repo](https://github.com/expo-community/standard-version-expo/issues/45).
+
 ## What's inside?
 
 Standard version is a tool to automate the versioning of your project using semver and [conventional commits][link-conventional].
